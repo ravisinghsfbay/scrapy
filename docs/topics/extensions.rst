@@ -202,8 +202,7 @@ Memory usage extension
 
 .. class:: scrapy.extensions.memusage.MemoryUsage
 
-.. note:: psutil_ package is highly recommended, but also required to use this
-          extension in Windows.
+.. note:: This extension does not work in Windows.
 
 Monitors the memory used by the Scrapy process that runs the spider and:
 
@@ -223,8 +222,6 @@ can be configured with the following settings:
 * :setting:`MEMUSAGE_NOTIFY_MAIL`
 * :setting:`MEMUSAGE_REPORT`
 * :setting:`MEMUSAGE_CHECK_INTERVAL_SECONDS`
-
-.. _psutil: https://pypi.python.org/pypi/psutil
 
 Memory debugger extension
 ~~~~~~~~~~~~~~~~~~~~~~~~~
